@@ -14,12 +14,12 @@
         {
             "label": "3. Build App Gradle",
             "type": "shell",
-            "command": "pack build taha/gradle-fips-app --path 4-gradle-app --builder taha/wolfi-fips-builder:latest --env BP_JVM_TYPE=JRE --publish=false --clear-cache"
+            "command": "pack build taha/gradle-fips-app --path 4-gradle-app --builder taha/wolfi-fips-builder:latest --env BP_JVM_TYPE=JRE --publish=false "
         },
         {
             "label": "3. Build App Maven",
             "type": "shell",
-            "command": "pack build taha/maven-fips-app --path 3-sample-app --builder taha/wolfi-fips-builder:latest --env BP_JVM_TYPE=JRE --publish=false --clear-cache"
+            "command": "pack build taha/maven-fips-app --path 3-sample-app --builder taha/wolfi-fips-builder:latest --env BP_JVM_TYPE=JRE --publish=false "
         },
         {
             "label": "4. Run App",

@@ -1,4 +1,4 @@
-description = "My Custom Wolfi FIPS Builder"
+description = "Custom Wolfi FIPS Builder"
 
 [stack]
 id = "io.buildpacks.stacks.jammy"

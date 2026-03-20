@@ -15,7 +15,12 @@ FROM chainguard/wolfi-base@sha256:9925d3017788558fa8f27e8bb160b791e56202b60c91fb
 USER root
 
 RUN apk update && \
-    apk add --no-cache bash gzip curl jq ca-certificates shadow
+    apk add --no-cache bash gzip curl jq ca-certificates shadow python3 py3-pip
+
+
+RUN pip install --no-cache-dir rich --break-system-packages
+
+RUN mkdir -p /opt/jdks /opt/jres
 
 RUN mkdir -p /opt/jdks /opt/jres
 
